@@ -1,2 +1,2 @@
 # Scripts
-Misc scripts
+Misc scripts primarily focusing around penetration testing.
