@@ -10,4 +10,5 @@ Current Scripts:
 
 - Java
   +  Hide - Hides a given file on dos and unix based systems 
+  +  UnHide - Does the opposite to above
   
