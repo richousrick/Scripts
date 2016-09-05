@@ -11,4 +11,7 @@ Current Scripts:
 - Java
   +  Hide - Hides a given file on dos and unix based systems 
   +  UnHide - Does the opposite to above
-  
+
+
+- Bash
+  + compilejava - takes a given *.java and compiles it to a runnable *.jar
