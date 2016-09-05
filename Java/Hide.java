@@ -61,7 +61,7 @@ public class Hide {
 	 * @param args an array of strings of length 1 or 2 <br>
 	 * args[0] is the path to the file to hide <br>
 	 * args[1] is optional and is used to specify the OS, it can be either win or unix
-	 * /
+	 */
 	public static void main(String[] args) {
 		if(args.length>0){
 			File f = new File(args[0]);
