@@ -18,5 +18,5 @@ Current Scripts:
     │
     └───FileMover
             MoveToGrandparent.java - Moves a file or directory to its grandparent directory
-               Meaning the parent will become its sister
+               Meaning it's parent will become its sister
 <pre>
