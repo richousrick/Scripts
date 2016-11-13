@@ -1,5 +1,3 @@
-package file_mover;
-
 import java.io.File;
 import java.util.Arrays;
 
