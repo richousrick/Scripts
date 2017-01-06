@@ -21,5 +21,5 @@ Current Scripts:
     │          Meaning it's parent will become its sister
     │
     └───LockScreen
-            Locks your windows environment until a password has been entered
+            LockScreen.java - Locks your windows environment until a password has been entered
 <pre>
