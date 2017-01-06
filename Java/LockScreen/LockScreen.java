@@ -8,8 +8,9 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
-import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.awt.event.WindowFocusListener;
+
 import javax.swing.JFrame;
 
 /**
@@ -84,7 +85,7 @@ public class LockScreen {
 		
 		// Add listeners
 		frame.addKeyListener(new LockKeyListener());
-		frame.addWindowListener(new LockWindowFocus());
+		frame.addWindowFocusListener(new LockWindowFocus());
 		if(lockMouse){
 			frame.addMouseMotionListener(new LockMouse());
 		}
@@ -101,7 +102,6 @@ public class LockScreen {
 			// note alpha must be at least 1 otherwise the frame can be clicked through
 			frame.setBackground(new Color(0,0,0,1));
 	}
-  
 
 	/**
 	 * Disables windows keybinds and enables password unlock
@@ -117,7 +117,7 @@ public class LockScreen {
 				r.keyPress(KeyEvent.VK_ESCAPE);
 				r.keyRelease(KeyEvent.VK_ESCAPE);
 			}
-						
+			
 			// Check password
 			if (password[counter]==e.getKeyChar()){
 				counter++;
@@ -140,6 +140,7 @@ public class LockScreen {
 	
 		@Override
 		public void keyTyped(KeyEvent e) {
+			frame.requestFocus();
 			// Release the key
 			// Disables most keybinds as all of the keys will have to be pressed in a short window to not be released
 			if(e.getKeyCode()!=KeyEvent.VK_UNDEFINED)
@@ -159,7 +160,7 @@ public class LockScreen {
 				r.mouseMove(lockMouseX, lockMouseY);
 		}
 	}
-  
+	
 	
 	/**
 	 * Makes the window un-focusable
@@ -170,11 +171,20 @@ public class LockScreen {
 	 * 
 	 * @author Richousrick
 	 */
-	class LockWindowFocus extends WindowAdapter{
+	class LockWindowFocus implements WindowFocusListener{
 	
 		@Override
 		public void windowLostFocus(WindowEvent e) {
 			frame.requestFocus();
 		}
+
+		/* (non-Javadoc)
+		 * @see java.awt.event.WindowFocusListener#windowGainedFocus(java.awt.event.WindowEvent)
+		 */
+		@Override
+		public void windowGainedFocus(WindowEvent e) {
+		}
+
 	}
+
 }
