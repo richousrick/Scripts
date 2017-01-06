@@ -16,7 +16,10 @@ Current Scripts:
     │       Hide.java - Hides a given file or directory on dos and unix based systems
     │       UnHide.java - Unhides a given file or directory on dos and unix based systems
     │
-    └───FileMover
-            MoveToGrandparent.java - Moves a file or directory to its grandparent directory
-               Meaning it's parent will become its sister
+    ├───FileMover
+    │       MoveToGrandparent.java - Moves a file or directory to its grandparent directory
+    │          Meaning it's parent will become its sister
+    │
+    └───LockScreen
+            Locks your windows environment until a password has been entered
 <pre>
