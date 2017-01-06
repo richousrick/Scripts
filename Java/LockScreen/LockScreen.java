@@ -117,11 +117,7 @@ public class LockScreen {
 				r.keyPress(KeyEvent.VK_ESCAPE);
 				r.keyRelease(KeyEvent.VK_ESCAPE);
 			}
-			
-			if (e.getKeyCode() == KeyEvent.VK_NUM_LOCK){
-				System.exit(0);
-			}
-			
+						
 			// Check password
 			if (password[counter]==e.getKeyChar()){
 				counter++;
