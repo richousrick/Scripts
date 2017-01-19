@@ -4,7 +4,7 @@ Misc scripts primarily focusing around penetration testing.
 Current Scripts:
 <pre>
 │
-├───bash 
+├───Bash 
 │       compilejava.sh - Takes a given *.java and compiles it to a runnable *.jar
 │
 ├───Bat
