@@ -1,5 +1,5 @@
 # Scripts
-Misc scripts primarily focusing around penetration testing.
+Misc scripts primarily focusing around Cyber Security.
 
 Current Scripts:
 <pre>
