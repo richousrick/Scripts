@@ -15,10 +15,15 @@ import javax.swing.JFrame;
 
 /**
  * Locks your windows environment until a password has been entered
- * Note: does not hide keystrokes from global key listeners
+ * Note: 
+ *	Does not hide keystrokes from global key listeners
  * 		Meaning some applications running in the background may still have macro functionality
  * 		For example many media players will still register media buttons.
- * 
+ *	AltGr + Tab can be used to change the background window
+ *		So if you are using this to protect sensitive data i recommend using a non transparent 
+ *		colour for the window.
+ *
+ *
  * @author Richousrick
  */
 public class LockScreen {
