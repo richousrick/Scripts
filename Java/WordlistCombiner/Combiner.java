@@ -1,5 +1,3 @@
-package com.richousrick.combiner;
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -10,6 +8,12 @@ import java.text.DecimalFormat;
 import java.util.HashSet;
 
 /**
+ * Creates a wordlist by copying all unique lines from two textfiles 
+ * 
+ * Use: Combiner [file1] [file2] [fileout]
+ * 	[file1] and [file2] are paths to the files to be combined
+ * 	[fileout] is a path that does not point to a directory
+ * 
  * @author Richousrick
  */
 public class Combiner {
