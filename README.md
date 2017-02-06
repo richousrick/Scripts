@@ -20,6 +20,9 @@ Current Scripts:
     │       MoveToGrandparent.java - Moves a file or directory to its grandparent directory
     │          Meaning it's parent will become its sister
     │
-    └───LockScreen
-            LockScreen.java - Locks your windows environment until a password has been entered
+    ├───LockScreen
+    │       LockScreen.java - Locks your windows environment until a password has been entered
+    │
+    └───WordlistCombiner
+            Combiner.java - Creates a wordlist by copying all unique lines from two textfiles 
 <pre>
